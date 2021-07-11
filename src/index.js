@@ -1,6 +1,5 @@
-import { SomeModule } from "./someModule";
-import "./test.css";
-import "./otherTest.scss";
+import { SomeModule } from "./js/someModule";
+import "./assets/scss/app.scss";
 import "./index.pug";
 
 function requireAll(r) {
