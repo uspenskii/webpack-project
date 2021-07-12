@@ -10,6 +10,12 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js", 
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    open: true,
+    port: 8002,
+  },
   module: {
     rules: [
       {
@@ -50,5 +56,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.pug",
     }),
-  ],
+  ],  
 };
